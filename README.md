@@ -12,7 +12,8 @@ Angle encoding maps each classical data point \( x_i \) to the angle of a quantu
 **Mathematical Representation**:
 For a classical data point \( x_i \), the corresponding quantum state after applying an RY gate is:
 
-Mathmeatical_Representation/gen1.png
+![gen1](https://github.com/Roua91/Reaserch_Project/assets/165356652/382fad5c-7880-4c3c-87fa-ec97269f1998)
+
 R_y(x_i) |0\rangle = \cos\left(\frac{x_i}{2}\right) |0\rangle + \sin\left(\frac{x_i}{2}\right) |1\rangle
 
 
