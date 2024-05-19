@@ -11,13 +11,18 @@ Angle encoding maps each classical data point \( x_i \) to the angle of a quantu
 
 **Mathematical Representation**:
 For a classical data point \( x_i \), the corresponding quantum state after applying an RY gate is:
-\[ R_y(x_i) |0\rangle = \cos\left(\frac{x_i}{2}\right) |0\rangle + \sin\left(\frac{x_i}{2}\right) |1\rangle \]
+R_y(x_i) |0\rangle = \cos\left(\frac{x_i}{2}\right) |0\rangle + \sin\left(\frac{x_i}{2}\right) |1\rangle
+
+
 
 The rotation matrix \( R_y(\theta) \) is given by:
-\[ R_y(\theta) = \begin{pmatrix}
+\[
+R_y(\theta) = \begin{pmatrix}
 \cos\left(\frac{\theta}{2}\right) & -\sin\left(\frac{\theta}{2}\right) \\
 \sin\left(\frac{\theta}{2}\right) & \cos\left(\frac{\theta}{2}\right)
-\end{pmatrix} \]
+\end{pmatrix}
+\]
+
 
 ### Application in Quantum Circuits
 
@@ -36,7 +41,16 @@ In the SQC, each classical data point \( x_i \) is encoded as an angle for an RY
 
 **Mathematical Representation**:
 For each qubit \( q_i \), the encoding process can be written as:
-\[ |q_i\rangle = R_y(\theta_i) H |0\rangle = R_y(\theta_i) \frac{|0\rangle + |1\rangle}{\sqrt{2}} = \cos\left(\frac{\theta_i}{2}\right) \frac{|0\rangle + |1\rangle}{\sqrt{2}} + \sin\left(\frac{\theta_i}{2}\right) \frac{|1\rangle - |0\rangle}{\sqrt{2}} \]
+|q_i\rangle = R_y(\theta_i) H |0\rangle
+
+where 
+
+H |0\rangle = \frac{|0\rangle + |1\rangle}{\sqrt{2}}
+
+and 
+
+R_y(\theta_i) \frac{|0\rangle + |1\rangle}{\sqrt{2}} = \cos\left(\frac{\theta_i}{2}\right) \frac{|0\rangle + |1\rangle}{\sqrt{2}} + \sin\left(\frac{\theta_i}{2}\right) \frac{|1\rangle - |0\rangle}{\sqrt{2}}
+
 
 #### 2. Entangled Quantum Circuit (EQC)
 
