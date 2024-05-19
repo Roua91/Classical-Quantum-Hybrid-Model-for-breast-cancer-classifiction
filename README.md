@@ -14,18 +14,11 @@ For a classical data point \( x_i \), the corresponding quantum state after appl
 
 ![gen1](https://github.com/Roua91/Reaserch_Project/assets/165356652/382fad5c-7880-4c3c-87fa-ec97269f1998)
 
-R_y(x_i) |0\rangle = \cos\left(\frac{x_i}{2}\right) |0\rangle + \sin\left(\frac{x_i}{2}\right) |1\rangle
-
-
 
 The rotation matrix \( R_y(\theta) \) is given by:
 
-\[
-R_y(\theta) = \begin{pmatrix}
-\cos\left(\frac{\theta}{2}\right) & -\sin\left(\frac{\theta}{2}\right) \\
-\sin\left(\frac{\theta}{2}\right) & \cos\left(\frac{\theta}{2}\right)
-\end{pmatrix}
-\]
+![gen2](https://github.com/Roua91/Reaserch_Project/assets/165356652/a1a62527-cd41-4624-8263-44891475dda8)
+
 
 
 ### Application in Quantum Circuits
@@ -45,15 +38,18 @@ In the SQC, each classical data point \( x_i \) is encoded as an angle for an RY
 
 **Mathematical Representation**:
 For each qubit \( q_i \), the encoding process can be written as:
-|q_i\rangle = R_y(\theta_i) H |0\rangle
+![SQC1](https://github.com/Roua91/Reaserch_Project/assets/165356652/62770080-6bb5-492c-b9e8-03ed22f52b60)
+
 
 where 
 
-H |0\rangle = \frac{|0\rangle + |1\rangle}{\sqrt{2}}
+![SQC2](https://github.com/Roua91/Reaserch_Project/assets/165356652/be62b9eb-4ed6-4afb-a139-f5a32ffb0d21)
+
 
 and 
 
-R_y(\theta_i) \frac{|0\rangle + |1\rangle}{\sqrt{2}} = \cos\left(\frac{\theta_i}{2}\right) \frac{|0\rangle + |1\rangle}{\sqrt{2}} + \sin\left(\frac{\theta_i}{2}\right) \frac{|1\rangle - |0\rangle}{\sqrt{2}}
+![SQC3](https://github.com/Roua91/Reaserch_Project/assets/165356652/5710c856-5fc9-4046-9903-d561e0e56564)
+
 
 
 #### 2. Entangled Quantum Circuit (EQC)
@@ -71,15 +67,19 @@ The EQC enhances the SQC by introducing entanglement between qubits after angle 
 
 **Mathematical Representation**:
 For each pair of qubits \( (q_i, q_j) \), the encoding process with entanglement can be represented as:
-|q_i\rangle = R_y(\theta_i) H |0\rangle
+
+![EQC1](https://github.com/Roua91/Reaserch_Project/assets/165356652/188a45cf-ff3d-487a-9130-3beb816a74c7)
+
 
 and 
 
-|q_j\rangle = R_y(\theta_j) H |0\rangle
+![EQC2](https://github.com/Roua91/Reaserch_Project/assets/165356652/ed14957a-32d6-4e78-926f-366a1836c315)
+
 
 then 
 
-|q_i, q_j\rangle = \text{CNOT}(R_y(\theta_i) H |0\rangle \otimes R_y(\theta_j) H |0\rangle)
+![EQC3](https://github.com/Roua91/Reaserch_Project/assets/165356652/4ff4ee7e-9296-4ef5-b3ed-3fe2856bd57b)
+
 
 
 This creates an entangled state that reflects the correlations between the encoded data points.
@@ -100,26 +100,31 @@ The AQC extends the EQC by adding phase shift gates (RZ gates) and deeper entang
 **Mathematical Representation**:
 For each qubit \( q_i \) with an additional phase shift, the encoding can be described as:
 
-|q_i\rangle = R_z(\phi_i) R_y(\theta_i) H |0\rangle
+![AQC1](https://github.com/Roua91/Reaserch_Project/assets/165356652/54dbcdb6-b348-4833-9462-08e440379616)
+
 
 Where
 
-H |0\rangle = \frac{|0\rangle + |1\rangle}{\sqrt{2}}
+![AQC2](https://github.com/Roua91/Reaserch_Project/assets/165356652/cd92fe25-f82c-441c-a95e-a241c311d1e5)
+
 
 
 and 
 
-R_y(\theta_i) \frac{|0\rangle + |1\rangle}{\sqrt{2}} = \cos\left(\frac{\theta_i}{2}\right) \frac{|0\rangle + |1\rangle}{\sqrt{2}} + \sin\left(\frac{\theta_i}{2}\right) \frac{|1\rangle - |0\rangle}{\sqrt{2}}
+![AQC3](https://github.com/Roua91/Reaserch_Project/assets/165356652/5e4dc61a-187e-4245-a5de-e503de43943e)
+
 
 Then 
 
-R_z(\phi_i) \left( \cos\left(\frac{\theta_i}{2}\right) \frac{|0\rangle + |1\rangle}{\sqrt{2}} + \sin\left(\frac{\theta_i}{2}\right) \frac{|1\rangle - |0\rangle}{\sqrt{2}} \right)
+![AQC4](https://github.com/Roua91/Reaserch_Project/assets/165356652/06103953-0371-4214-850e-2e38651e3e3d)
+
 
 
 
 When including entanglement, the full state representation for pairs of qubits \( (q_i, q_j) \) is:
 
-|q_i, q_j\rangle = \text{CZ}(R_z(\phi_i) R_y(\theta_i) H |0\rangle \otimes R_z(\phi_j) R_y(\theta_j) H |0\rangle)
+![AQC5](https://github.com/Roua91/Reaserch_Project/assets/165356652/aaf4a2f8-d85f-4588-93fe-3590664e41d0)
+
 
 
 ### Summary
@@ -128,15 +133,18 @@ Angle encoding is a versatile and powerful method for embedding classical data i
 
 - **SQC** uses angle encoding through RY rotations.
 
-|q_i\rangle = R_y(\theta_i) H |0\rangle
+![Sum_SQC](https://github.com/Roua91/Reaserch_Project/assets/165356652/3a10fd4d-3eb4-4c54-a760-d1da1265bd62)
+
 
 - **EQC** builds on SQC's angle encoding and adds entanglement with CNOT gates.
 
-  |q_i, q_j\rangle = \text{CNOT}(R_y(\theta_i) H |0\rangle \otimes R_y(\theta_j) H |0\rangle)
+![Sum_EQC](https://github.com/Roua91/Reaserch_Project/assets/165356652/d3cc43f5-6fff-48ad-be58-f73021a73235)
+
 
 - **AQC** further enhances EQC with additional phase shifts (RZ gates) and deeper entanglement using controlled-Z gates.
 
-  |q_i, q_j\rangle = \text{CZ}(R_z(\phi_i) R_y(\theta_i) H |0\rangle \otimes R_z(\phi_j) R_y(\theta_j) H |0\rangle)
+![Sum_AQC](https://github.com/Roua91/Reaserch_Project/assets/165356652/96e63a4b-cf26-4bc6-a31d-92ee983cebf1)
+
 
 
 These methods enable the transformation of classical data into quantum states, leveraging the unique properties of quantum computation to potentially improve machine learning performance.
