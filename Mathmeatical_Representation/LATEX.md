@@ -20,5 +20,20 @@ EQC 3:
 
 
 AQC 1:
+\left| q_i \right\rangle = R_z(\phi_i) R_y(\theta_i) H \left| 0 \right\rangle
+
+AQC 2:
+H \left| 0 \right\rangle = \frac{\left| 0 \right\rangle + \left| 1 \right\rangle}{\sqrt{2}}
+
+AQC 3:
+R_z(\phi_i) \left( \cos\left(\frac{\theta_i}{2}\right) \frac{\left| 0 \right\rangle + \left| 1 \right\rangle}{\sqrt{2}} + \sin\left(\frac{\theta_i}{2}\right) \frac{\left| 1 \right\rangle - \left| 0 \right\rangle}{\sqrt{2}} \right)
+
+
+AQC 4:
+R_y(\theta_i) \frac{\left| 0 \right\rangle + \left| 1 \right\rangle}{\sqrt{2}} = \cos\left(\frac{\theta_i}{2}\right) \frac{\left| 0 \right\rangle + \left| 1 \right\rangle}{\sqrt{2}} + \sin\left(\frac{\theta_i}{2}\right) \frac{\left| 1 \right\rangle - \left| 0 \right\rangle}{\sqrt{2}}
+
+
+AQC 5:
+\left| q_i, q_j \right\rangle = \text{CZ} \left( R_z(\phi_i) R_y(\theta_i) H \left| 0 \right\rangle \otimes R_z(\phi_j) R_y(\theta_j) H \left| 0 \right\rangle \right)
 
 
