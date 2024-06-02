@@ -1,8 +1,8 @@
-SQC 1:
+SQC 1:\
 \left| q_i \right\rangle = R_y(\theta_i) H \left| 0 \right\rangle
 
 
-SQC 2:
+SQC 2:\
 H \left| 0 \right\rangle = \frac{\left| 0 \right\rangle + \left| 1 \right\rangle}{\sqrt{2}}
 
 SQC 3:
