@@ -9,7 +9,7 @@ The project uses four main models:
 1. **ResNet50 (Conventional Transfer Learning)**:
    A pre-trained deep learning model that has proven effective in feature extraction for various image classification tasks. This model serves as the baseline for comparing quantum-enhanced models.
 
-3. **Simple Quantum Circuit (SQC)**:
+3. (**Q1: Simple Quantum Circuit (SQC)**:)[https://github.com/Roua91/Classical-Quantum-Hybrid-Model-for-breast-cancer-classifiction/blob/main/Q1_Hybrid_model_94%25.ipynb]!
    This model uses a basic quantum circuit with a Hadamard gate to create a superposition state, followed by rotations on the Y-axis to encode input data. The goal of this model is to explore how simple quantum operations can improve classification accuracy.
 
 4. **Entangled Quantum Circuit (EQC)**:
