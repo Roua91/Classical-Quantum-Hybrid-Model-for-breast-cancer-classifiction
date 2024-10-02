@@ -21,7 +21,7 @@ The project uses four main models:
    - **Accuracy**: 96.92%  
    - **Computational Efficiency**: More resource-intensive than ResNet50, but offers a good balance of performance and accuracy.
 
-4. **[Advanced Quantum Circuit (AQC)](https://github.com/Roua91/Classical-Quantum-Hybrid-Model-for-breast-cancer-classifiction/blob/main/Q3_Hybrid_model_95%25.ipynb)**:  
+4. **[Q3: Advanced Quantum Circuit (AQC)](https://github.com/Roua91/Classical-Quantum-Hybrid-Model-for-breast-cancer-classifiction/blob/main/Q3_Hybrid_model_95%25.ipynb)**:  
    This model takes the EQC further by adding phase shift gates and controlled-Z gates to explore deeper quantum state spaces and create more intricate entanglement patterns. The goal is to see if these more complex quantum operations lead to better performance.  
    - **Accuracy**: 95.38%  
    - **Computational Efficiency**: The most resource-intensive model, but still less accurate than EQC.
