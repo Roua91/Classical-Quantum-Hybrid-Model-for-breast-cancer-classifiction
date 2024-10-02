@@ -12,10 +12,10 @@ The project uses four main models:
 3. (**Q1: Simple Quantum Circuit (SQC)**:)[https://github.com/Roua91/Classical-Quantum-Hybrid-Model-for-breast-cancer-classifiction/blob/main/Q1_Hybrid_model_94%25.ipynb]!
    This model uses a basic quantum circuit with a Hadamard gate to create a superposition state, followed by rotations on the Y-axis to encode input data. The goal of this model is to explore how simple quantum operations can improve classification accuracy.
 
-4. **Entangled Quantum Circuit (EQC)**:
+4. **Q2: Entangled Quantum Circuit (EQC)**: [https://github.com/Roua91/Classical-Quantum-Hybrid-Model-for-breast-cancer-classifiction/blob/main/Q2_Hybrid_model_97%25.ipynb]
    In addition to the Hadamard gate and Y-axis rotations, this model includes a C-NOT gate to create entanglement between qubits. The EQC introduces more complex quantum interactions, aiming to improve the model's learning capabilities.
 
-5. **Advanced Quantum Circuit (AQC)**:
+5. **Advanced Quantum Circuit (AQC)**: []
    This model takes the EQC further by adding phase shift gates and controlled-Z gates to explore deeper quantum state spaces and create more intricate entanglement patterns. The goal is to see if these more complex quantum operations lead to better performance.
 
 
